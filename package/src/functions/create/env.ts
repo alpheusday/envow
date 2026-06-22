@@ -129,20 +129,13 @@ const toReadOnlyProxy = <T extends Record<string, unknown>>({
     }) as Readonly<T>;
 };
 
-type CreateEnvCoreOptions<
-    Define extends StandardSchemaDictionary,
-    Ext extends readonly Extension<StandardSchemaDictionary>[] = readonly [],
-> = {
-    options: Options<Define, Ext>;
-};
-
-const createEnvCore = <
+const createEnv = <
     Define extends StandardSchemaDictionary,
     const Ext extends
         readonly Extension<StandardSchemaDictionary>[] = readonly [],
->({
-    options,
-}: CreateEnvCoreOptions<Define, Ext>): EnvOutput<Define, Ext> => {
+>(
+    options: Options<Define, Ext>,
+): EnvOutput<Define, Ext> => {
     const extensions: readonly Extension<StandardSchemaDictionary>[] =
         options.extends ?? [];
 
@@ -222,4 +215,4 @@ const createEnvCore = <
     }) as EnvOutput<Define, Ext>;
 };
 
-export { createEnvCore };
+export { createEnv };
