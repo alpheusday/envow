@@ -97,9 +97,9 @@ This project is inspired by [`t3-env`](https://github.com/t3-oss/t3-env) with th
 
 - Extensions are schema-only; `runtimeEnv` is resolved alongside `createEnv`, not inside a extension.
 
-- Flat `define` + `target`/`conditions` instead of `server`/`client`/`clientPrefix`.
-
 - More composable while nestable extensions being merged in a single validation pass.
+
+- Flat `define` + `target`/`conditions` instead of `server`/`client`/`clientPrefix`.
 
 ## License
 
