@@ -1,0 +1,30 @@
+{
+    "extends": "../../tsconfig.base.json",
+    "compilerOptions": {
+        "lib": [
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "noEmit": true,
+        "incremental": true,
+        "types": [
+            "next",
+            "node"
+        ],
+        "plugins": [
+            {
+                "name": "next"
+            }
+        ],
+        "paths": {
+            "#/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*",
+        "./next-env.d.ts",
+        "./next.config.ts"
+    ]
+}

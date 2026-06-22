@@ -4,9 +4,9 @@ set windows-shell := ["pwsh", "-Command"]
 tsc := "pnpm exec tsc"
 biome := "pnpm exec biome"
 tsdown := "pnpm exec tsdown"
-vite := "pnpm exec vite"
 vitest := "pnpm exec vitest"
-typedoc := "pnpm exec typedoc"
+vite := "pnpm exec vite"
+next := "pnpm exec next"
 
 publish_dev := "pnpm publish --no-git-checks --tag dev --access public"
 publish := "pnpm publish --access public"
@@ -18,6 +18,8 @@ tst := "test"
 ex_client := "examples/client"
 
 ex_server := "examples/server"
+
+ex_next := "examples/next"
 
 # Default action
 _:
@@ -46,7 +48,12 @@ typos:
 # Lint code with TypeScript Compiler
 tsc:
     cd ./{{pkg}} && {{tsc}} --noEmit
+
     cd ./{{tst}} && {{tsc}} --noEmit
+
+    cd ./{{ex_client}} && {{tsc}} --noEmit
+    cd ./{{ex_server}} && {{tsc}} --noEmit
+    cd ./{{ex_next}} && {{tsc}} --noEmit
 
 # Lint code
 lint:
@@ -89,6 +96,18 @@ ex-server-dev:
 ex-server-build:
     cd ./{{ex_server}} && {{vite}} build
 
+# Run the Next.js example dev server (port 3001)
+ex-next-dev:
+    cd ./{{ex_next}} && {{next}} dev --port 3001
+
+# Build the Next.js example
+ex-next-build:
+    cd ./{{ex_next}} && {{next}} build
+
+# Start the Next.js example prod server (port 3000)
+ex-next-start:
+    cd ./{{ex_next}} && {{next}} start --port 3000
+
 # Publish package with dev tag as dry-run
 publish-dev-try:
     cd ./{{pkg}} && {{publish_dev}} --dry-run
@@ -109,6 +128,7 @@ publish:
 clean-linux:
     rm -rf ./{{ex_client}}/dist
     rm -rf ./{{ex_server}}/dist
+    rm -rf ./{{ex_next}}/.next
 
     rm -rf ./{{pkg}}/dist
 
@@ -120,6 +140,7 @@ clean-macos:
 clean-windows:
     if (Test-Path "./{{ex_client}}/dist") { Remove-Item -Recurse -Force "./{{ex_client}}/dist" }
     if (Test-Path "./{{ex_server}}/dist") { Remove-Item -Recurse -Force "./{{ex_server}}/dist" }
+    if (Test-Path "./{{ex_next}}/.next") { Remove-Item -Recurse -Force "./{{ex_next}}/.next" }
 
     if (Test-Path "./{{pkg}}/dist") { Remove-Item -Recurse -Force "./{{pkg}}/dist" }
 
@@ -133,6 +154,9 @@ clean-all-linux:
 
     rm -rf ./{{ex_client}}/node_modules
     rm -rf ./{{ex_server}}/node_modules
+    rm -rf ./{{ex_next}}/node_modules
+    rm -rf ./{{ex_next}}/next-env.d.ts
+    rm -rf ./{{ex_next}}/tsconfig.tsbuildinfo
 
     rm -rf ./{{tst}}/node_modules
 
@@ -150,6 +174,9 @@ clean-all-windows:
 
     if (Test-Path "./{{ex_client}}/node_modules") { Remove-Item -Recurse -Force "./{{ex_client}}/node_modules" }
     if (Test-Path "./{{ex_server}}/node_modules") { Remove-Item -Recurse -Force "./{{ex_server}}/node_modules" }
+    if (Test-Path "./{{ex_next}}/node_modules") { Remove-Item -Recurse -Force "./{{ex_next}}/node_modules" }
+    if (Test-Path "./{{ex_next}}/next-env.d.ts") { Remove-Item -Recurse -Force "./{{ex_next}}/next-env.d.ts" }
+    if (Test-Path "./{{ex_next}}/tsconfig.tsbuildinfo") { Remove-Item -Recurse -Force "./{{ex_next}}/tsconfig.tsbuildinfo" }
 
     if (Test-Path "./{{tst}}/node_modules") { Remove-Item -Recurse -Force "./{{tst}}/node_modules" }
 

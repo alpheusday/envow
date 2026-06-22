@@ -1,14 +1,14 @@
 packages:
     - ./package
     - ./test
-    - ./examples/client
-    - ./examples/server
+    - ./examples/*
 
 autoInstallPeers: false
 strictPeerDependencies: false
 
 allowBuilds:
     esbuild: false
+    sharp: true
 
 catalogs:
     dev:
@@ -22,6 +22,11 @@ catalogs:
         valibot: ^1.4.0
         zod: ^4.4.0
     example:
+        "@types/react": ^19.2.17
+        "@types/react-dom": ^19.2.3
+        react: ^19.2.7
+        react-dom: ^19.2.7
+        next: 16.2.9
         vite: ^8.0.16
 
 minimumReleaseAge: 1440

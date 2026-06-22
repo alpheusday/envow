@@ -2,11 +2,13 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build"
+        "dev": "next dev --port 3001",
+        "build": "next build",
+        "start": "next start --port 3000"
     },
     "dependencies": {
         "envow": "workspace:*",
+        "next": "catalog:example",
         "react": "catalog:example",
         "react-dom": "catalog:example",
         "zod": "catalog:dev"
@@ -14,7 +16,6 @@
     "devDependencies": {
         "@types/react": "catalog:example",
         "@types/react-dom": "catalog:example",
-        "@vitejs/plugin-react": "^6.0.2",
-        "vite": "catalog:example"
+        "typescript": "^6.0.3"
     }
 }
