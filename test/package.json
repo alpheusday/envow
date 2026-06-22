@@ -1,0 +1,14 @@
+{
+    "private": true,
+    "dependencies": {
+        "@standard-schema/spec": "catalog:dev",
+        "envow": "workspace:*",
+        "arktype": "catalog:dev",
+        "valibot": "catalog:dev",
+        "vitest": "^4.1.9",
+        "zod": "catalog:dev"
+    },
+    "devDependencies": {
+        "vite-tsconfig-paths": "^6.1.1"
+    }
+}

@@ -1,0 +1,32 @@
+packages:
+    - ./package
+    - ./test
+    - ./examples/client
+    - ./examples/server
+
+autoInstallPeers: false
+strictPeerDependencies: false
+
+allowBuilds:
+    esbuild: false
+
+catalogs:
+    dev:
+        "@standard-schema/spec": 1.1.0
+        arktype: 2.2.0
+        valibot: 1.4.0
+        zod: 4.4.0
+    peer:
+        "@standard-schema/spec": ^1.1.0
+        arktype: ^2.2.0
+        valibot: ^1.4.0
+        zod: ^4.4.0
+    example:
+        vite: ^8.0.16
+
+minimumReleaseAge: 1440
+
+minimumReleaseAgeExclude:
+    - "@apst/*"
+    - "@typescript/*"
+    - typescript

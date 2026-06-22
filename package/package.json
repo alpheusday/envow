@@ -1,0 +1,73 @@
+{
+    "name": "envow",
+    "version": "0.1.0",
+    "description": "A vow-driven env validation library",
+    "keywords": [
+        "envow",
+        "env",
+        "ts",
+        "typescript",
+        "js",
+        "javascript"
+    ],
+    "homepage": "https://github.com/alpheusday/envow",
+    "bugs": "https://github.com/alpheusday/envow/issues",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/alpheusday/envow.git",
+        "directory": "package"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Alpheus",
+        "email": "contact@alphe.us"
+    },
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.mjs",
+            "require": "./dist/import.js"
+        },
+        "./presets/*": {
+            "types": "./dist/presets/*.d.ts",
+            "import": "./dist/presets/*.mjs",
+            "require": "./dist/presets/*.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "ts-vista": "~0.2.3"
+    },
+    "devDependencies": {
+        "@standard-schema/spec": "catalog:dev",
+        "arktype": "catalog:dev",
+        "valibot": "catalog:dev",
+        "zod": "catalog:dev"
+    },
+    "peerDependencies": {
+        "@standard-schema/spec": "catalog:peer",
+        "arktype": "catalog:peer",
+        "valibot": "catalog:peer",
+        "zod": "catalog:peer"
+    },
+    "peerDependenciesMeta": {
+        "@standard-schema/spec": {
+            "optional": true
+        },
+        "arktype": {
+            "optional": true
+        },
+        "valibot": {
+            "optional": true
+        },
+        "zod": {
+            "optional": true
+        }
+    }
+}

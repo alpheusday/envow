@@ -1,0 +1,17 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "dependencies": {
+        "envow": "workspace:*",
+        "@srvkit/vite": "~0.2.0",
+        "hono": "^4.12.26",
+        "zod": "catalog:dev"
+    },
+    "devDependencies": {
+        "vite": "catalog:example"
+    }
+}

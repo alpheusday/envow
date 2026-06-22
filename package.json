@@ -1,0 +1,12 @@
+{
+    "private": true,
+    "devDependencies": {
+        "@apst/biome": "~0.3.2",
+        "@apst/tsconfig": "~0.3.0",
+        "@apst/tsdown": "~0.5.0",
+        "@biomejs/biome": "^2.5.0",
+        "@types/node": "^25.9.3",
+        "tsdown": "~0.22.3",
+        "typescript": "7.0.1-rc"
+    }
+}
