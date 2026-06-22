@@ -15,10 +15,10 @@ function ensureSynchronous<T>(
 /**
  * Validate a record against a dictionary of Standard Schema validators.
  */
-const parseWithDictionary = <TDict extends StandardSchemaDictionary>(
-    dictionary: TDict,
+const parseWithDictionary = <Dict extends StandardSchemaDictionary>(
+    dictionary: Dict,
     value: Record<string, unknown>,
-): StandardSchemaV1.Result<StandardSchemaDictionary.InferOutput<TDict>> => {
+): StandardSchemaV1.Result<StandardSchemaDictionary.InferOutput<Dict>> => {
     const result: Record<string, unknown> = {};
 
     const issues: StandardSchemaV1.Issue[] = [];
