@@ -99,7 +99,7 @@ type CompleteOptions<
     /**
      * Called when validation fails.
      *
-     * By default, the issues are binded to the error thrown.
+     * By default, the issues are bound to the error thrown.
      */
     onValidationError: (issues: readonly StandardSchemaV1.Issue[]) => never;
 
