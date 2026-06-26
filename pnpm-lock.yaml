@@ -5,10 +5,11 @@ settings:
   excludeLinksFromLockfile: false
 
 catalogs:
-  dev:
+  dep:
     '@standard-schema/spec':
-      specifier: 1.1.0
+      specifier: ^1.1.0
       version: 1.1.0
+  dev:
     arktype:
       specifier: 2.2.0
       version: 2.2.0
@@ -141,13 +142,13 @@ importers:
 
   package:
     dependencies:
+      '@standard-schema/spec':
+        specifier: catalog:dep
+        version: 1.1.0
       ts-vista:
         specifier: ~0.2.3
         version: 0.2.3
     devDependencies:
-      '@standard-schema/spec':
-        specifier: catalog:dev
-        version: 1.1.0
       arktype:
         specifier: catalog:dev
         version: 2.2.0
@@ -161,7 +162,7 @@ importers:
   test:
     dependencies:
       '@standard-schema/spec':
-        specifier: catalog:dev
+        specifier: catalog:dep
         version: 1.1.0
       arktype:
         specifier: catalog:dev

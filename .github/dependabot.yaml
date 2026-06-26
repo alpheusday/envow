@@ -29,9 +29,9 @@ updates:
           - dependency-name: "typescript"
             versions: ["<7.0.0"]
           # dep
+          - dependency-name: "@standard-schema/spec"
           - dependency-name: "ts-vista"
           # peer
-          - dependency-name: "@standard-schema/spec"
           - dependency-name: "arktype"
           - dependency-name: "valibot"
           - dependency-name: "zod"

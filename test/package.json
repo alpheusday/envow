@@ -1,7 +1,7 @@
 {
     "private": true,
     "dependencies": {
-        "@standard-schema/spec": "catalog:dev",
+        "@standard-schema/spec": "catalog:dep",
         "envow": "workspace:*",
         "arktype": "catalog:dev",
         "valibot": "catalog:dev",

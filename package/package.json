@@ -42,24 +42,20 @@
         "dist"
     ],
     "dependencies": {
+        "@standard-schema/spec": "catalog:dep",
         "ts-vista": "~0.2.3"
     },
     "devDependencies": {
-        "@standard-schema/spec": "catalog:dev",
         "arktype": "catalog:dev",
         "valibot": "catalog:dev",
         "zod": "catalog:dev"
     },
     "peerDependencies": {
-        "@standard-schema/spec": "catalog:peer",
         "arktype": "catalog:peer",
         "valibot": "catalog:peer",
         "zod": "catalog:peer"
     },
     "peerDependenciesMeta": {
-        "@standard-schema/spec": {
-            "optional": true
-        },
         "arktype": {
             "optional": true
         },
