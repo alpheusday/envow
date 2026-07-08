@@ -7,6 +7,7 @@ const env = createEnv({
     runtimeEnv: {
         ...process.env,
         ...import.meta.env,
+        NODE_ENV: process.env.NODE_ENV,
     },
     extends: [
         viteServer,

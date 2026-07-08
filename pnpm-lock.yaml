@@ -124,8 +124,8 @@ importers:
   examples/server:
     dependencies:
       '@srvkit/vite':
-        specifier: ~0.2.0
-        version: 0.2.0(@types/node@26.1.0)(rolldown@1.1.3)(vite@8.1.3(@types/node@26.1.0))
+        specifier: ~0.2.1
+        version: 0.2.1(@types/node@26.1.0)(rolldown@1.1.3)(vite@8.1.3(@types/node@26.1.0))
       envow:
         specifier: workspace:*
         version: link:../../package
@@ -738,11 +738,11 @@ packages:
   '@rolldown/pluginutils@1.0.1':
     resolution: {integrity: sha512-2j9bGt5Jh8hj+vPtgzPtl72j0yRxHAyumoo6TNfAjsLB04UtpSvPbPcDcBMxz7n+9CYB0c1GxQFxYRg2jimqGw==}
 
-  '@srvkit/common@0.2.0':
-    resolution: {integrity: sha512-iei+OSHdqxVL0ZcbYh1Ds8cM7UCCagx0Jym/HB5n6oKS51GIFQEJ8240XeWw/G2rnvaiR98mz8FzB8PAl4rOZg==}
+  '@srvkit/common@0.2.1':
+    resolution: {integrity: sha512-O79bD2uLOMfcRBET/Z6laztpOirraKuOLaOWTTwfWLHQBaot12SbO+4H35z1+CRT2SyUyOIfe6nzxOw6R3he3A==}
 
-  '@srvkit/vite@0.2.0':
-    resolution: {integrity: sha512-cG+Gj9vdB3dRiAeCYuH/Wen3nHbFWtI48uEFdFg13+mXGnBGnEPlBY5mP0fDSiNZ2EN43NNnkZdJ99qrG/io7g==}
+  '@srvkit/vite@0.2.1':
+    resolution: {integrity: sha512-Ra7fu6ceY/KDbuPa2Mp3i9eyzjkpVLO8IZEXBDsfJyTZCKJv1kja3WP084bHN9MZBqQbqBIEmsCGGRz0U2h1fA==}
     peerDependencies:
       rolldown: ^1.0.0
       vite: ^8.0.12
@@ -1863,7 +1863,7 @@ snapshots:
 
   '@rolldown/pluginutils@1.0.1': {}
 
-  '@srvkit/common@0.2.0':
+  '@srvkit/common@0.2.1':
     dependencies:
       consola: 3.4.2
       envkist: 0.2.0
@@ -1871,9 +1871,9 @@ snapshots:
       srvx: 0.11.16
       ts-vista: 0.2.3
 
-  '@srvkit/vite@0.2.0(@types/node@26.1.0)(rolldown@1.1.3)(vite@8.1.3(@types/node@26.1.0))':
+  '@srvkit/vite@0.2.1(@types/node@26.1.0)(rolldown@1.1.3)(vite@8.1.3(@types/node@26.1.0))':
     dependencies:
-      '@srvkit/common': 0.2.0
+      '@srvkit/common': 0.2.1
       rolldown-plugin-copy: 0.2.0(@types/node@26.1.0)(rolldown@1.1.3)
     optionalDependencies:
       rolldown: 1.1.3

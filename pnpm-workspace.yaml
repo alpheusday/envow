@@ -33,5 +33,6 @@ minimumReleaseAge: 1440
 
 minimumReleaseAgeExclude:
     - "@apst/*"
+    - "@srvkit/*"
     - "@typescript/*"
     - typescript

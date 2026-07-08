@@ -7,7 +7,7 @@
     },
     "dependencies": {
         "envow": "workspace:*",
-        "@srvkit/vite": "~0.2.0",
+        "@srvkit/vite": "~0.2.1",
         "hono": "^4.12.28",
         "zod": "catalog:dev"
     },
