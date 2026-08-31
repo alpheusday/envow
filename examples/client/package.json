@@ -14,7 +14,7 @@
     "devDependencies": {
         "@types/react": "catalog:example",
         "@types/react-dom": "catalog:example",
-        "@vitejs/plugin-react": "^6.1.0",
+        "@vitejs/plugin-react": "^6.1.1",
         "vite": "catalog:example"
     }
 }
