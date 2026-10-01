@@ -130,8 +130,8 @@ importers:
         specifier: workspace:*
         version: link:../../package
       hono:
-        specifier: ^4.13.10
-        version: 4.13.10
+        specifier: ^4.13.11
+        version: 4.13.11
       zod:
         specifier: catalog:dev
         version: 4.4.0
@@ -1148,8 +1148,8 @@ packages:
   globrex@0.1.2:
     resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
-  hono@4.13.10:
-    resolution: {integrity: sha512-dQuLsa5oO+47QVMVMaaD9cIv8ctmVtK1iRvwWngkfloFJMeFeuoUFDswIqZGxmGX3hrRzREgEArjkK9OgsQEhA==}
+  hono@4.13.11:
+    resolution: {integrity: sha512-/SMX/RQNJn7oNmFwH6DtwDqcrzZU2otm1FD6OJe2cWF6cfy/F8hq0XVBv7xW3FTJshRQwuBnXHDq2kNsdZnshg==}
     engines: {node: '>=16.9.0'}
 
   hookable@6.1.1:
@@ -2182,7 +2182,7 @@ snapshots:
 
   globrex@0.1.2: {}
 
-  hono@4.13.10: {}
+  hono@4.13.11: {}
 
   hookable@6.1.1: {}
 
