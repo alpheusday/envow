@@ -25,9 +25,6 @@ updates:
       commit-message:
           prefix: "chore"
       ignore:
-          # root
-          - dependency-name: "typescript"
-            versions: ["<7.0.0"]
           # dep
           - dependency-name: "@standard-schema/spec"
           - dependency-name: "ts-vista"

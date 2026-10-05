@@ -1,5 +1,6 @@
 {
     "private": true,
+    "type": "module",
     "dependencies": {
         "@standard-schema/spec": "catalog:dep",
         "envow": "workspace:*",
@@ -9,6 +10,6 @@
         "zod": "catalog:dev"
     },
     "devDependencies": {
-        "vite-tsconfig-paths": "^6.1.1"
+        "vite": "^8.3.2"
     }
 }
