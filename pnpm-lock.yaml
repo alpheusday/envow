@@ -130,8 +130,8 @@ importers:
         specifier: workspace:*
         version: link:../../package
       hono:
-        specifier: ^4.13.21
-        version: 4.13.21
+        specifier: ^4.13.22
+        version: 4.13.22
       zod:
         specifier: catalog:dev
         version: 4.4.0
@@ -1053,8 +1053,8 @@ packages:
     resolution: {integrity: sha512-X6fBC0pmImC70gvX2zm56go9hx0MyoGVdG0tUCkg/D+Xnh5TJsOZ7iDbOdI3PvmtrDxnu1YdDufpK2QJX1Meqw==}
     engines: {node: '>=20.20.0'}
 
-  hono@4.13.21:
-    resolution: {integrity: sha512-h9UsguqfVk4kjUwLvQpHOmOaJpW10jz9lp8bvKUUa04wJG/fabKFBqXZ06D6LFaeKQZtUZRVeg0gfkTTEsX7Mw==}
+  hono@4.13.22:
+    resolution: {integrity: sha512-wncKd5/40Pj8grx0RZ2fgNIicFEmVFwIHT5UFLTnphR8I6AQWFf9c2JoM6ZJ9g8y4pMzg3sNlCVNe0m2Yclg0Q==}
     engines: {node: '>=16.9.0'}
 
   hookable@6.1.2:
@@ -2008,7 +2008,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  hono@4.13.21: {}
+  hono@4.13.22: {}
 
   hookable@6.1.2: {}
 
